@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cómo desarrollé el ERP de Hilos y Coo. Seguí un pedido de la mercería desde la tienda hasta el cobro en caja.">
+  <title>Hilos y Coo · ERP de gestión comercial | Alesandro Casanova</title>
+  <link rel="icon" href="../assets/marca.svg">
+  <link rel="stylesheet" href="../assets/site.css">
+  <link rel="stylesheet" href="hilos.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="wrap mast">
+    <a class="brand" href="../index.html" aria-label="Alesandro Casanova, inicio"><img src="../assets/marca.svg" alt="" width="36" height="36"><b>AC<span>/</span>DEV</b></a>
+    <a href="../index.html#proyectos">Volver a proyectos</a>
+  </header>
+  <main class="wrap role-page" id="contenido">
+    <section class="case-intro" aria-labelledby="proyecto">
+      <div>
+        <p class="eyebrow">DESARROLLO FULL STACK</p>
+        <h1 id="proyecto">Hilos y Coo<span>.</span></h1>
+        <p class="role-lede">Un cliente encarga un hilo por internet y lo retira en el mostrador. Desarrollé el sistema que permite seguir ese mismo pedido desde que se elige el color hasta que el cobro aparece en caja.</p>
+        <a class="primary" href="#cuentas">Ver el recorrido</a>
+      </div>
+      <figure class="case-preview">
+        <img src="../assets/hilos-catalogo.webp" alt="Catálogo de mostrador del ERP con los artículos de muestra de la mercería.">
+        <figcaption>Catálogo de mostrador <a href="../assets/hilos-catalogo.webp">Ampliar captura</a></figcaption>
+      </figure>
+    </section>
+    <section class="case-context" aria-labelledby="aporte">
+      <h2 id="aporte">Mi trabajo</h2>
+      <div>
+        <p>Diseñé la interfaz en React y la API en Node.js con Express. Modelé los productos, sus variantes y los pedidos en MariaDB con Prisma. Los permisos de cada cuenta determinan quién puede comprar, entregar un pedido o consultar las finanzas.</p>
+        <p>Desplegué el sistema en Linux con Docker Compose y sigo a cargo de su mantenimiento.</p>
+      </div>
+    </section>
+    <section id="cuentas" aria-labelledby="cuentas-titulo">
+      <h2 id="cuentas-titulo">Seguí un pedido<span>.</span></h2>
+      <p class="role-instructions">Las tres guías muestran el mismo pedido desde la tienda, el mostrador y la caja. La demo interactiva completa se ejecuta en local.</p>
+      <div class="role-grid">
+        <article>
+          <p class="overline">TIENDA ONLINE</p><h3>Cliente</h3>
+          <p>Elegí un artículo y su variante. Confirmá el retiro en el local con pago en efectivo y anotá el número de pedido.</p>
+          <a class="primary" href="guias/cliente.html">Ver guía de cliente</a>
+        </article>
+        <article>
+          <p class="overline">MOSTRADOR</p><h3>Empleado</h3>
+          <p>Buscá ese número en Pedidos de clientes. Prepará el pedido y confirmá la entrega para registrar la venta.</p>
+          <a class="primary" href="guias/empleado.html">Ver guía de empleado</a>
+        </article>
+        <article>
+          <p class="overline">ADMINISTRACIÓN</p><h3>Propietario</h3>
+          <p>Abrí Finanzas y revisá los movimientos de caja. Buscá el ingreso por la venta que acabás de entregar.</p>
+          <a class="primary" href="guias/propietario.html">Ver guía de propietario</a>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

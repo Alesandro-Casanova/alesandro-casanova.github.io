@@ -1,0 +1,32 @@
+.role-page { padding-block: clamp(32px, 5vw, 72px); }
+.case-intro { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(22px, 5vw, 80px); }
+.role-page h1 { font-size: clamp(52px, 6.5vw, 94px); }
+.role-lede { font-size: clamp(17px, 1.45vw, 22px); max-width: 52ch; color: var(--muted); margin: 20px 0 24px; }
+.case-preview { padding: 5% 5% 0; border-radius: 10px; background: #abc7ba; color: #152a20; min-width: 0; }
+.case-preview img { display: block; width: 100%; height: auto; border-radius: 5px; }
+.case-preview figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; padding-block: 12px; font-size: 14px; }
+.case-preview a { text-decoration: underline; text-underline-offset: 3px; font-weight: 600; }
+.case-context { margin-block: clamp(32px, 5vw, 70px); border-block: 1px solid var(--line); padding-block: 28px; display: grid; grid-template-columns: 1fr 2fr; gap: 20px; }
+.case-context h2 { font-size: clamp(28px, 3vw, 40px); }
+.case-context p, .role-instructions, .role-help { color: var(--muted); max-width: 70ch; }
+.case-context p + p { margin-top: 10px; }
+.role-instructions { margin-block: 16px 24px; }
+.role-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.role-grid article { display: flex; flex-direction: column; align-items: flex-start; padding: clamp(18px, 2vw, 30px); background: var(--panel); border: 1px solid var(--line); border-radius: 12px; }
+.role-grid .overline { font-size: 12px; }
+.role-grid h3 { font-size: clamp(30px, 2.8vw, 44px); letter-spacing: -.04em; margin: 10px 0 16px; }
+.role-grid article > p:not(.overline) { flex: 1; color: var(--muted); margin-bottom: 22px; }
+.role-grid .primary { font-size: 14px; }
+.role-guide { margin-top: 12px; padding-block: 4px; font-size: 14px; text-decoration: underline; text-underline-offset: 3px; }
+.role-guide:hover, .mast > a:last-child:hover { color: var(--lime); }
+.role-help { margin-block: 22px; }
+.role-page details { border-top: 1px solid var(--line); padding-top: 16px; }
+.role-page summary { cursor: pointer; width: fit-content; }
+.role-page summary:focus-visible { outline: 3px solid #95b9ff; outline-offset: 4px; }
+.role-page details p { margin-top: 10px; max-width: 72ch; color: var(--muted); }
+#availability:not(:empty) { color: var(--lime); margin-bottom: 14px; }
+@media (max-width: 800px) {
+  .case-intro, .case-context, .role-grid { grid-template-columns: 1fr; }
+  .case-preview { width: min(100%, 580px); }
+  .case-context { gap: 12px; }
+}
