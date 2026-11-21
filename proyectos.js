@@ -3,11 +3,11 @@ window.proyectos = [
   {
     titulo: "Hilos y Coo · ERP de gestión comercial",
     area: "Full stack",
-    resumen: "Desarrollé el sistema que conecta la tienda online de una mercería con el mostrador, el inventario y la caja. El recorrido muestra cómo un pedido de la tienda pasa al mostrador y cómo se registra el cobro.",
+    resumen: "Desarrollé el sistema que conecta la tienda online de una mercería con el mostrador, el inventario y la caja. En la demo podés hacer un pedido, entregarlo y ver el cobro en caja.",
     tecnologias: ["React", "TypeScript", "Prisma", "MariaDB"],
     imagen: "assets/hilos-catalogo.webp",
     demo: "demos/hilos.html",
-    accion: "Ver el recorrido"
+    accion: "Ver proyecto y demo"
   },
   {
     titulo: "API de ventas",
